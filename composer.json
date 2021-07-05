@@ -1,0 +1,9 @@
+{
+    "require": {
+        "stripe/stripe-php": "^7.87",
+        "sendgrid/sendgrid": "^7.9"
+    },
+    "require-dev": {
+        "symfony/dotenv": "^5.3"
+    }
+}

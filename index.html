@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {
+
+  background-color: #FFF8F3;
+  margin-top: 5px;
+  border-color: darkorange;
+
+  }
+button {
+  background-color:darkorange;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width:50%;
+  margin-top: 30px;
+  font-size: 20px;
+  border-radius: 25px;
+  
+}
+
+.titlecontainer {
+  text-align: center;
+  font-size: 40px;
+  color: black;
+  padding: 20px;
+  margin:100px; 
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 12px 0 5px 0;
+}
+img.rushFilesLogo {
+  width: 10%;
+  border-radius: 10%;
+  padding-top: 50px;
+}
+.container {
+  padding: 16px;
+  text-align: center;
+ 
+ 
+}
+label[for=email] {
+  display: inline-block;
+  box-sizing: border-box;
+  width:60%;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+input[type=email] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  width:50%;
+  align-content: center;
+}
+
+
+</style>
+</head>
+<body>
+
+<form action="public/process_email.php" method="post">
+ 
+  <div class="imgcontainer">
+    <img src="/public/assets/images/rushfiles_logo.png" alt="RushFilesLogo" class="rushFilesLogo">
+  </div>
+  <div class="titlecontainer">
+    <h2">Access your RushFiles subscription by signing in </h2>
+ </div>
+  <div class="container">
+    <label for="email">Your Email</label>
+    <input type="email"  name="email" required>
+    <button type="submit">Sign In</button>
+  </div>
+</form>
+</body>
+</html>
